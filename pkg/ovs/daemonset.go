@@ -137,7 +137,7 @@ func DaemonSet(
 								"/usr/bin/start-ovs",
 							},
 							Args: []string{
-								"ovs-vswitchd",
+								"ovs-vswitchd-host",
 							},
 							Image: instance.Spec.OvsContainerImage,
 							SecurityContext: &corev1.SecurityContext{
